@@ -12,6 +12,14 @@ section {
 
 /* Grids */
 
+.col-xs-4 {
+    width: 33.33333333333333%; 
+}
+
+.col-xs-7 {
+    width: 58.333333333333336%;
+}
+
 .col-xs-11 {
     width: 91.66666666666666%;
 }
@@ -73,19 +81,20 @@ label::after {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(248, 212, 212, 0.3);
+    font-size: 1.5rem;
+    background-color: rgba(248, 212, 212, 0.8);
     transition: all 0.5s;
     transform: translateX(-100%);
 }
 
 .menu a {
     display: block;
-    color: #FAB29E;
+    color: #fff;
     font-weight: 800;
     height: 50px;
     text-decoration: none;
     padding: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 1)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
 }
 
 #menu-bar:checked ~ .menu {
@@ -112,21 +121,39 @@ label::after {
     transform: translateX(-50%) translateY(-50%);
 }
 
-.container h2 {
+.title-banner{
     color: #fff;
     font-size: 4rem;
 }
 
-.container p {
-    color: #FAB29E;
+.paragraph-banner {
+    color: #fff;
     font-size: 2rem;
     padding-bottom: 10px; 
 }
 
-.container a {
+.banner a {
     border: 1.5px solid rgb(179, 250, 158);
     text-decoration: none;
     color: #fff;
     font-size: 1.5em;
     padding: 5px;
+}
+
+/* Stiles for second section */
+
+.container-section {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;    
+}
+
+.container-section h2 {
+    font-size: 2.5rem;
+}
+
+.container-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: justify;
 }
