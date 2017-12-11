@@ -8,8 +8,8 @@
 
 /* Grids */
 
-.col-xs-11 {
-    width: 91.66666666666666%;
+.col-xs-9 {
+    width: 83.33333333333334%;
 }
 
 .col-xs-12 {
@@ -190,7 +190,7 @@ button::after {
 
 .container-img {
     width: 100%;
-    height: 450px;
+    height: 470px;
     border: 4px solid #FBE6CE;
     margin-bottom: 15px; 
 }
@@ -310,5 +310,62 @@ button::after {
 /* Vista desk */
 
 @media (min-width:992px) {
+    /* Grids */
+
+    .col-md-2 {
+        width: 16.666666666666664%; 
+    }
+
+    .col-md-4 {
+        width: 33%; 
+    }
     
+    .col-md-8 {
+        width: 66.66666666666666%;
+    }
+    
+    /* Styles for banner */
+    
+    .banner {
+        height: 460px;
+    }
+    
+    /* Style for first section */
+    
+    .section-third  {
+        width: 100%;
+        height: 500px;
+    }
+
+    .row::before, .row:after {
+        content: " ";
+        display: table;
+    }
+        
+    .row::after {
+        clear: both;
+    }
+        
+    [class*='col-md-'] {
+        float: left; 
+    }
+        
+    /* Style for third section */
+
+    .container-img {
+        margin-left: 2px;
+    }
+    
+    .container-img img {
+       height: 250px;
+    }    
+
+    .container-img h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container-img p {
+        margin-bottom: 10px;
+    }
 }
