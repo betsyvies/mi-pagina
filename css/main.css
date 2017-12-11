@@ -8,14 +8,6 @@
 
 /* Grids */
 
-.col-xs-4 {
-    width: 33.33333333333333%; 
-}
-
-.col-xs-7 {
-    width: 58.333333333333336%;
-}
-
 .col-xs-11 {
     width: 91.66666666666666%;
 }
@@ -180,7 +172,7 @@ button {
     font-size: 1.25rem;
     font-weight: 700;
     border-radius: 0.3rem;
-    outline: 0;
+    outline: none;
     margin-top: 10px;
     margin-bottom: 30px;
     cursor: pointer;
@@ -212,6 +204,7 @@ button::after {
     color: #fff;
     border: 1px solid #92D082;
     background-color: #6BBA55;
+    outline: none;
     padding: 0.6rem 1.5rem;
     font-size: 1rem;
     font-weight: 700;
@@ -258,7 +251,18 @@ button::after {
 /* Vista tablet */
 
 @media (min-width:768px) {
+    /* Grids */
+    
+    .col-sm-4 {
+        width: 33.33333333333333%; 
+    }
+    
+    .col-sm-7 {
+        width: 58.333333333333336%;
+    }
+
     /* Styles for banner */
+
     .banner {
         height: 400px;
     }
@@ -275,6 +279,32 @@ button::after {
     }
 
     /* Style for first section */
+
+    .section {
+        width: 100%;
+    }
+    .row::before, .row:after {
+        content: " ";
+        display: table;
+    }
+    
+    .row::after {
+        clear: both;
+    }
+    
+    [class*='col-sm-'] {
+        float: left; 
+    }
+
+    .container-section {
+        margin-right: 25px;
+    }
+
+    /* Style for third section */
+
+    .container-img img {
+        height: 330px;
+    }
 }
     
 /* Vista desk */
