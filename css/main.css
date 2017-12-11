@@ -119,6 +119,7 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 10px;
     transform: translateX(-50%) translateY(-50%);
     color: #fff;
 }
@@ -250,4 +251,34 @@ button::after {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+/* Styles for media queries */
+
+/* Vista tablet */
+
+@media (min-width:768px) {
+    /* Styles for banner */
+    .banner {
+        height: 400px;
+    }
+    .title-banner{
+        font-size: 5rem;
+    }
+     
+    .paragraph-banner {
+        font-size: 3rem;
+    }
+     
+    .banner a {
+      font-size: 2.5em;
+    }
+
+    /* Style for first section */
+}
+    
+/* Vista desk */
+
+@media (min-width:992px) {
+    
 }
