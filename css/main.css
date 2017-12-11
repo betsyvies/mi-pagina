@@ -89,6 +89,10 @@ label::after {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5)
 }
 
+.menu a:hover {
+    background-color: #FAB29E;
+}
+
 #menu-bar:checked ~ .menu {
     transform: translateX(0%);
 }
@@ -190,6 +194,13 @@ button::after {
     padding-left: 10px;
 }
 
+button:active {
+    background: #6BBA55;
+    border: 2px solid rgb(41, 112, 22);
+    border-radius: 0.5rem;
+    outline: 0;
+}
+
 /* Styles for third section */
 
 .container-img {
@@ -217,6 +228,13 @@ button::after {
     margin-bottom: 20px;
 }
 
+.container-img  input:active {
+    background: #6BBA55;
+    border: 2px solid rgb(41, 112, 22);
+    border-radius: 0.5rem;
+    outline: 0;
+}
+
 /* Styles for footer */
 
 .container-footer {
@@ -238,8 +256,15 @@ button::after {
     padding-left: 10px;
 }
 
-.icons-white hr {
+.icons-white i:hover {
+    color: #FBF7B8;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
     background-color: #fff;
+    border: none;
 }
 
 .span {
@@ -318,8 +343,8 @@ button::after {
 @media (min-width:992px) {
     /* Grids */
 
-    .col-md-2 {
-        width: 16.666666666666664%; 
+    .col-md-3 {
+        width: 25%; 
     }
 
     .col-md-4 {
@@ -347,6 +372,10 @@ button::after {
         background-color: #FAB29E;
     }
 
+    .menu a:hover {
+        background-color: #FBE6CE;
+    }
+
     .menu a {
         border-bottom: 0;
     }
@@ -354,7 +383,7 @@ button::after {
     /* Styles for banner */
     
     .banner {
-        height: 460px;
+        height: 500px;
     }
     
     /* Style for first section */
